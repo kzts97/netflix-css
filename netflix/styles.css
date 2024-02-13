@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar li {
+    list-style: none;
+    padding: 1rem;
+}
+.navbar li a{
+    padding: 2px 2px 2px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: gray;
+
+}
+
+.logo {
+    height: 60px;
+    width: 11%;
+
+
+}
+
+.logo img {
+    width: 90%;
+    height: 95%;
+    object-fit: cover;
+}
+
+/*banner*/
+
+.banner {
+    background-image: url(../netflix/main\ img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 448px;
+
+}
+
+.banner-contents{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    padding-top: 190px;
+    height: 190px;
+    position: relative;
+}
+
+.banner-title{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    position: absolute;
+    top: 0;
+}
+
+.banner-btn{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: absolute; 
+    top: 50%; 
+    left: 0; 
+    transform: translateY(-50%); 
+}
+.banner-btn2 {
+    left: auto; 
+    right: 0; 
+}
+.banner-btn1 button,
+.banner-btn2 button {
+    width:60px;
+    height: 30px;
+    color: black;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+
+.banner-btn1 button:hover,
+.banner-btn2 button:hover {
+    background-color: rgb(171, 163, 163); 
+    cursor: pointer;
+}
+
+.banner-description {
+    line-height:  1.5;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    position: absolute; 
+    bottom: 0; 
+
+}
+
+/* row */
+.row {
+    color: white;
+
+}
+
+.row h2 {
+    color: white;
+    margin-left: 25px;
+    margin-top: 20px;
+
+}
+
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 200px;
+    margin-right: 10px;
+    transition: transform 450rem;
+}
+
+.row_posterLarge{
+    max-height: 300px;
+}
+.row_poster:hover{
+    transform: scale(1.1);
+}
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
